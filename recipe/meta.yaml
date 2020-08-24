@@ -1,18 +1,18 @@
 {% set name = "hyp3lib" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c5e6c588f8f41dc6a8d43f4ee544c1ac490efdc3233e455179747d08754f79e2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7b6c0a1c55aa71cc3081651d5b39371ed816811ce10859ceaf7af45266880a1c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - apply_wb_mask.py = hyp3lib.apply_wb_mask:main
     - byteSigmaScale.py = hyp3lib.byteSigmaScale:main
@@ -121,11 +121,11 @@ test:
     - verify_opod.py --help
 
 about:
-  home: "https://github.com/ASFHyP3/hyp3-lib"
+  home: https://github.com/ASFHyP3/hyp3-lib
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "Common library for HyP3 plugins"
+  summary: Common library for HyP3 plugins
 
 extra:
   recipe-maintainers:
