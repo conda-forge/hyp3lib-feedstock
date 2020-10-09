@@ -5,11 +5,9 @@ Home: https://github.com/ASFHyP3/hyp3-lib
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hyp3lib-feedstock/blob/master/LICENSE.txt)
 
 Summary: Common library for HyP3 plugins
-
-
 
 Current build status
 ====================
