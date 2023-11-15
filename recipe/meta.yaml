@@ -55,7 +55,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - build
+    - python-build
     - setuptools >=42
     - setuptools_scm >=3.4
   run:
@@ -134,4 +134,3 @@ extra:
     - asjohnston-asf
     - jtherrmann
     - jacquelynsmale
-
