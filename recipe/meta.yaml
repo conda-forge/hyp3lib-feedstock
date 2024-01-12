@@ -35,7 +35,6 @@ requirements:
     - python >=3.9
     - boto3
     - gdal
-    - importlib_metadata
     - lxml
     - netCDF4
     - numpy
@@ -43,6 +42,8 @@ requirements:
     - requests
     - scipy
     - six
+    - statsmodels
+    - urllib3
     - statsmodels
     - urllib3
 
@@ -59,6 +60,8 @@ test:
     - resample_geotiff.py --help
     - rtc2color.py --help
     - SLC_copy_S1_fullSW.py --help
+    # legacy scripts
+    - GC_map_mod --help
 
 about:
   home: https://github.com/ASFHyP3/hyp3-lib
