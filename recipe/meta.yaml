@@ -44,8 +44,6 @@ requirements:
     - six
     - statsmodels
     - urllib3
-    - statsmodels
-    - urllib3
 
 test:
   imports:
