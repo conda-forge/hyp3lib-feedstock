@@ -145,6 +145,7 @@ Feedstock Maintainers
 
 * [@andrewplayer3](https://github.com/andrewplayer3/)
 * [@asjohnston-asf](https://github.com/asjohnston-asf/)
+* [@forrestfwilliams](https://github.com/forrestfwilliams/)
 * [@jacquelynsmale](https://github.com/jacquelynsmale/)
 * [@jhkennedy](https://github.com/jhkennedy/)
 * [@jtherrmann](https://github.com/jtherrmann/)
