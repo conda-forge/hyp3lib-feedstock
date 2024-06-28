@@ -27,12 +27,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.10
     - python-build
     - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - python >=3.9
+    - python >=3.10
     - boto3
     - gdal
     - lxml
@@ -41,7 +41,6 @@ requirements:
     - pillow
     - requests
     - scipy
-    - six
     - statsmodels
     - urllib3
 
