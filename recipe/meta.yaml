@@ -1,5 +1,5 @@
 {% set name = "hyp3lib" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7aef55defdd9d46b4f609bc7586c07c5d6b31747a40e99e03f2abba0cfbfd921
+  sha256: e84a69fc743a6a95fd1e62c3a1afee6ba73533b58b92d05e3e323d5e9bc3fc97
 
 build:
   noarch: python
@@ -27,12 +27,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python >=3.10,<3.13
     - python-build
     - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - python >=3.10
+    - python >=3.10,<3.13
     - boto3
     - gdal
     - lxml
