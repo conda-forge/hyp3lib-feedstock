@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "hyp3lib" %}
 {% set version = "3.1.3" %}
 
@@ -11,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - byteSigmaScale.py = hyp3lib.byteSigmaScale:main
@@ -27,12 +28,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - python-build
     - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - boto3
     - gdal
     - lxml
@@ -45,6 +46,8 @@ requirements:
     - urllib3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - hyp3lib
   commands:
