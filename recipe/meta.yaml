@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hyp3lib" %}
-{% set version = "3.1.4" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 78d88b654cfa3f6d515d95fe4e118d59e641b6e8016cf01dd66d5eed592c75e0
+  sha256: 97f5a8d8885dda476a61f63fba2f3c8f361d158a77fe59368b20bd7d11fe0ef4
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ requirements:
     - setuptools_scm >=6.2
   run:
     - python >={{ python_min }}
-    - boto3
+    - boto3 >=1.36.0
     - gdal
     - lxml
     - netCDF4
