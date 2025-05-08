@@ -45,15 +45,9 @@ test:
   imports:
     - hyp3lib
   commands:
-    - byteSigmaScale.py --help
-    - createAmp.py --help
     - get_orb.py --help
-    - makeAsfBrowse.py --help
-    - make_cogs.py --help
-    - raster_boundary2shape.py --help
     - resample_geotiff.py --help
     - rtc2color.py --help
-    - SLC_copy_S1_fullSW.py --help
     # legacy scripts
     - GC_map_mod --help
 
